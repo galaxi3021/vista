@@ -1,0 +1,8 @@
+<h1> {{producto.nombre}} </h1> 
+<p> {{producto.descripcion}} </p>
+<h4> {{producto.precio}} </h4> 
+
+<a href="{% url 'tienda:update' producto.id %}">Actualizar</a>
+<br>
+<a href="{% url 'tienda:index' %}">Todos los productos</a>
+<a href="{% url 'tienda:delete' producto.id %}">Eliminar</a>

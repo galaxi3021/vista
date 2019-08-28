@@ -18,6 +18,9 @@ class Producto(models.Model):
     def __str__(self):
         return self.nombre
 
+    def get_absolute_url(self):
+        return u'/tienda/%d' % self.id 
+
 class Factura(models.Model):
     """Model definition for factura."""
 
